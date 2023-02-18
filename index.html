@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="cuervoicono" href="resources/cuervoicono.png">
+	<title>The Crow Alphabet</title>
+</head>
+
+<body>
+	<header>
+		<div id="main">
+			<div class = "logo"></div>
+			<nav>
+				<ul>			
+					<li><a href="#section-1">Contacto</a></li>
+					<li><a href="#section-2">Preguntas frecuentes</a></li>
+				</ul>
+			</nav>		
+		</div>
+		<div class="text">
+			<p>Tocando su ventana</p>
+			<h1>THE CROW ALPHABET</h1>
+			<span></span>
+			<p>Su selección de libros directa a su puerta</p><br></br>
+			<a href="catalogo.html" class="active">VER CATÁLOGO</a>
+		</div>
+	</header>
+	<section id="section-1">
+		<div class="container reveal">
+			<h2>CONTACTO</h2>
+			<div class="cards">
+				<div class="text-card">
+					<h3>Estudiante</h3>
+					<p>Nombre: Edgar Z. Dagger<br></br>
+					C.I.: 27.893.165<br></br>
+					Universidad Experimental del Táchira</p>
+				</div>
+			</div>
+		</div>				
+	</section>
+	<section id="section-2">
+		<div class="container reveal">
+			<h2>Preguntas frecuentes</h4>
+			<div class="cards">
+				<div class="text-card">
+					<h3>¿Qué es The Crow Alphabet?</h3>
+					<p>Basados en el cuento de Edgar Allan Poe, The Crow Alphabet
+					es un sistema de entrega de libros a domicilio en donde encontrarás
+					los mejores relatos, historietas y manga a tu selección.</p>
+				</div>
+				<div class="text-card">
+					<h3>¿Cómo comprar en línea?</h3>
+					<p>El servicio de compras directas por página web en línea se encuentra deshabilitado temporalmente,
+					pero puedes encontrar el catálogo en la página y pedirlos vía WhatsApp de contacto.
+					<br></br>
+					Se te atenderá y para hacer el pago a distancia fuera de la tienda solo se necesita su número de tarjeta de crédito,
+					fecha de expiración y los números de atrás. ¡Es completamente fácil y seguro!</p>
+				</div>	
+			</div>	
+			
+<script type="text/javascript">
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+	var reveals = document.querySelectorAll('.reveal');
+
+
+	for(var i = 0; i < reveals.length; i++){
+		var windowheight = window.innerHeight;
+		var revealtop = reveals[i].getBoundingClientRect().top;
+		var revealpoint= 150;
+		if(revealtop < windowheight - revealpoint){
+			reveals[i].classList.add('active');
+		}else{
+			reveals[i].classList.remove('active');
+		}
+	}
+	
+
+}
+
+</script
+></body>
+</html>	
